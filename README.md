@@ -7,6 +7,5 @@
 
 
 ### Email:
-[ua.itzakon@gmail.com]
+ua.itzakon@gmail.com
 
-[ua.itzakon@gmail.com]: <ua.itzakon@gmail.com>
