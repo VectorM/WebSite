@@ -1,0 +1,39 @@
+.skills{
+	margin-bottom: 50px;
+
+	.skills-list{
+		li{
+			margin-top: 15px;
+			display: flex;
+			align-items:center;
+			@include clearfix;
+			&:first-child{
+				margin-top: 0;
+			}
+			.title{
+				flex:1;
+				float: left;
+				min-width:130px;
+			}
+			.rating{
+				margin-left: 50px;
+				@include clearfix;
+				span{
+					width: 25px;
+					height: 25px;
+					float: left;
+					margin-left: 10px;
+					border:1px solid $title;
+					border-radius:50%;
+
+					&.star{
+						background-color: $title;
+					}
+					&:first-child{
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}

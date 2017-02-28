@@ -1,0 +1,35 @@
+/*general*/
+body, html {
+	font:18px/27px 'robotoregular', Helvetica, Arial, sans-serif;
+	color:$main;
+	height:100%;
+	background:$bg;
+}
+select, input, textarea {
+	font:100% 'Avenir-Roman', sans-serif;
+	outline:none;
+}
+a {
+	color:#000;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;;
+}
+.page {
+	position:relative;
+	overflow:hidden;
+	min-height:100%;
+	margin: 5% 2%;
+	.container{
+		margin: 0 auto;
+		max-width: 1024px;
+	}
+}
+strong{
+	font-family:'robotobold', Helvetica, Arial, sans-serif;
+}
+i, em {
+	font-style: italic;
+}
+

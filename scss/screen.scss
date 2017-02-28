@@ -1,0 +1,21 @@
+/*compass imports*/
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+
+/*modules & stuff*/
+@import "modules/fonts";
+@import "modules/variables";
+@import "modules/elements";
+@import "modules/mixins";
+
+
+/*pages*/
+@import "pages/main";
+@import "pages/author";
+@import "pages/main-info";
+@import "pages/skills";
+
+
+
+/*media*/
+@import "media/print";

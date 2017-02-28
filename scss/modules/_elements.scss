@@ -1,0 +1,36 @@
+.heading{
+	color:#fff;
+	position: relative;
+	background-color: $subtitle;
+	margin-bottom: 15px;
+
+	&:before{
+		content:'';
+		position: absolute;
+		left:0;
+		width: 15px;
+		top: 0;
+		background-color:$title;
+		height: 100%;
+		display: block;
+	}
+
+	.title{
+		display: inline-block;
+		margin-left: 35px;
+		padding: 10px 0;
+	}
+}
+
+.cols-2{
+	overflow: hidden;
+	& > div{
+		width: 45%;
+		float: left;
+		margin-left: 10%;
+
+		&:first-child{
+			margin: 0;
+		}
+	}
+}

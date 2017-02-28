@@ -1,0 +1,28 @@
+.main-info{
+	margin-bottom: 50px;
+	.information-list{
+		font-family:'robotolight', Helvetica, Arial, sans-serif;
+		li{
+			margin-top: 15px;
+			&:first-child{
+				margin-top: 0;
+			}
+			.place{
+				display: block;
+			}
+		}
+	}
+	.personal-info{
+		.information-list{
+
+			.title{
+				float: left;
+				width:70px;
+			}
+			.colon{
+				font-weight: 700;
+				margin:0 10px 0;
+			}
+		}
+	}
+}
