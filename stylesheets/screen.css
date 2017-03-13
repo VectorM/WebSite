@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*compass imports*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,6 +75,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'social';
+  src: url("../fonts/social.eot?63926488");
+  src: url("../fonts/social.eot?63926488#iefix") format("embedded-opentype"), url("../fonts/social.woff2?63926488") format("woff2"), url("../fonts/social.woff?63926488") format("woff"), url("../fonts/social.ttf?63926488") format("truetype"), url("../fonts/social.svg?63926488#social") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'social';
+    src: url('../font/social.svg?63926488#social') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-gmail:before {
+  content: '\e800';
+}
+
+/* 'юаА' */
+.icon-skype:before {
+  content: '\f17e';
+}
+
+/* 'яЕ╛' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* 'яЖЙ' */
+.icon-linkedin-squared:before {
+  content: '\f30c';
+}
+
+/* 'яММ' */
 .heading {
   color: #fff;
   position: relative;
@@ -106,6 +172,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 .cols-2 > div:first-child {
   margin: 0;
+}
+
+.social-links {
+  margin: 0 auto;
+  max-width: 320px;
+}
+.social-links ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.social-links ul li {
+  width: 25%;
+  float: left;
+}
+.social-links ul li a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #e64c3c;
 }
 
 /*pages*/
